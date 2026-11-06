@@ -1,0 +1,131 @@
+.search-food-section {
+  width: 100%;
+  padding: 55px 20px;
+  background: #fffaf1;
+}
+
+.search-food-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.search-food-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 45px;
+}
+
+.search-food-heading h2 {
+  color: #333333;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.food-navigation {
+  display: flex;
+  gap: 12px;
+}
+
+.food-navigation button {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 50%;
+  background: #ffb30e;
+  color: #ffffff;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(255, 179, 14, 0.25);
+  transition: background 0.3s ease;
+}
+
+.food-navigation button:hover {
+  background: #f17228;
+}
+
+.food-category-grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 25px;
+}
+
+.food-category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  border: none;
+  background: transparent;
+  color: #333333;
+  cursor: pointer;
+}
+
+.food-category img {
+  width: 125px;
+  height: 125px;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.food-category:hover img {
+  transform: scale(1.07);
+}
+
+.food-category.selected img {
+  outline: 4px solid #ffb30e;
+  outline-offset: 4px;
+}
+
+.food-category span {
+  font-size: 13px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.selected-food-message {
+  margin-top: 25px;
+  color: #f17228;
+  font-size: 13px;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .food-category-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    row-gap: 30px;
+  }
+
+  .food-category img {
+    width: 115px;
+    height: 115px;
+  }
+}
+
+@media (max-width: 500px) {
+  .search-food-section {
+    padding: 40px 15px;
+  }
+
+  .search-food-heading {
+    margin-bottom: 30px;
+  }
+
+  .search-food-heading h2 {
+    font-size: 21px;
+  }
+
+  .food-category-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px 15px;
+  }
+
+  .food-category img {
+    width: 110px;
+    height: 110px;
+  }
+}

@@ -1,0 +1,321 @@
+.app-benefits-section {
+  width: 100%;
+  padding: 55px 20px;
+  background: #fff0d0;
+}
+
+.app-benefits-container {
+  width: 100%;
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 25px 35px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(255, 179, 14, 0.12);
+}
+
+.app-benefit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 10px 15px;
+}
+
+.app-benefit + .app-benefit {
+  border-left: 1px solid #dddddd;
+}
+
+.app-benefit-icon {
+  flex-shrink: 0;
+  color: #ffb30e;
+  filter: drop-shadow(0 5px 8px rgba(255, 179, 14, 0.2));
+}
+
+.app-benefit h3 {
+  max-width: 100px;
+  color: #f17228;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+
+.install-app-section {
+  width: 100%;
+  padding: 50px 20px 0;
+  background: #fff0d0;
+  overflow: hidden;
+}
+
+.install-app-container {
+  width: 100%;
+  max-width: 1050px;
+  min-height: 350px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 50px;
+}
+
+
+.phone-mockups {
+  position: relative;
+  min-height: 340px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 0;
+}
+
+.phone {
+  position: relative;
+  width: 165px;
+  height: 290px;
+  padding: 12px 9px;
+  background: #ffffff;
+  border: 5px solid #e8e8e8;
+  border-radius: 25px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+}
+
+.phone-back {
+  height: 245px;
+  margin-right: -35px;
+  transform: translateY(20px);
+  background: #f6f6f6;
+}
+
+.phone-front {
+  z-index: 1;
+}
+
+.phone-speaker {
+  width: 45px;
+  height: 5px;
+  margin: 0 auto 15px;
+  border-radius: 10px;
+  background: #dddddd;
+}
+
+.phone-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.phone-greeting {
+  color: #333333;
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1.4;
+}
+
+.phone-search {
+  padding: 8px;
+  background: #f1f1f1;
+  border-radius: 5px;
+  color: #999999;
+  font-size: 8px;
+}
+
+.phone-food-types {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+}
+
+.phone-content > strong {
+  color: #333333;
+  font-size: 10px;
+}
+
+.phone-order-card,
+.phone-food-image {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 9px;
+  background: #fff3df;
+  border-radius: 7px;
+}
+
+.phone-order-card span,
+.phone-food-image b {
+  color: #333333;
+  font-size: 9px;
+  font-weight: 700;
+}
+
+.phone-order-card small,
+.phone-food-image small {
+  color: #888888;
+  font-size: 8px;
+}
+
+.phone-food-image {
+  flex-direction: row;
+  align-items: center;
+}
+
+.phone-food-image > span {
+  font-size: 25px;
+}
+
+.phone-food-image > div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+
+.install-app-content {
+  padding: 25px 0;
+}
+
+.install-app-icon {
+  display: none;
+  color: #ffb30e;
+}
+
+.install-app-content h2 {
+  margin-bottom: 15px;
+  color: #ff9f00;
+  font-size: 34px;
+  font-weight: 800;
+}
+
+.install-app-content p {
+  max-width: 400px;
+  color: #999999;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.app-store-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.app-store-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  background: #ffffff;
+  color: #222222;
+  border-radius: 7px;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+}
+
+.app-store-button:hover {
+  transform: translateY(-3px);
+}
+
+.app-store-button > span:first-child {
+  font-size: 23px;
+}
+
+.app-store-button > span:last-child {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.app-store-button small {
+  font-size: 8px;
+}
+
+.app-store-button strong {
+  font-size: 13px;
+}
+
+
+@media (max-width: 800px) {
+  .app-benefits-container {
+    padding: 20px 10px;
+  }
+
+  .app-benefit {
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+  }
+
+  .app-benefit h3 {
+    max-width: none;
+    font-size: 14px;
+  }
+
+  .install-app-container {
+    gap: 20px;
+  }
+
+  .install-app-content h2 {
+    font-size: 28px;
+  }
+}
+
+
+@media (max-width: 550px) {
+  .app-benefits-section {
+    padding: 35px 12px;
+  }
+
+  .app-benefits-container {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 20px;
+  }
+
+  .app-benefit {
+    flex-direction: row;
+    justify-content: flex-start;
+    text-align: left;
+  }
+
+  .app-benefit + .app-benefit {
+    border-left: none;
+    border-top: 1px solid #eeeeee;
+    padding-top: 18px;
+  }
+
+  .install-app-container {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .phone-mockups {
+    min-height: 300px;
+  }
+
+  .phone {
+    width: 150px;
+    height: 265px;
+  }
+
+  .phone-back {
+    height: 225px;
+  }
+
+  .install-app-content {
+    text-align: center;
+    padding: 20px 0 40px;
+  }
+
+  .install-app-content p {
+    margin: auto;
+  }
+
+  .app-store-buttons {
+    justify-content: center;
+  }
+}
